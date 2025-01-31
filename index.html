@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ultimate Card Collector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <h1>Ultimate Card Collector</h1>
+    <nav>
+      <button id="btn-collection">Collection</button>
+      <button id="btn-deckbuilder">Deck Builder</button>
+      <button id="btn-battle">Battle</button>
+      <button id="btn-store">Store</button>
+    </nav>
+  </header>
+
+  <!-- Main Game Container -->
+  <main>
+    <!-- Dashboard: displays player info, currency, progress -->
+    <section id="dashboard">
+      <p id="player-info">Welcome, Collector!</p>
+      <p id="currency">Coins: 1000 | Gems: 50</p>
+      <p id="progress">Region: Mystic Vale</p>
+    </section>
+
+    <!-- Content Views -->
+    <section id="content">
+      <!-- Card Collection View -->
+      <div id="collection-view" class="game-view">
+        <h2>Your Card Collection</h2>
+        <div id="card-collection" class="card-container"></div>
+      </div>
+
+      <!-- Deck Builder View -->
+      <div id="deckbuilder-view" class="game-view hidden">
+        <h2>Deck Builder</h2>
+        <div id="deck-cards" class="card-container"></div>
+        <button id="save-deck">Save Deck</button>
+      </div>
+
+      <!-- Battle View -->
+      <div id="battle-view" class="game-view hidden">
+        <h2>Battle Arena</h2>
+        <div id="battle-log"></div>
+        <button id="start-battle">Start Battle</button>
+      </div>
+
+      <!-- Store View (for purchasing packs/upgrades) -->
+      <div id="store-view" class="game-view hidden">
+        <h2>In-Game Store</h2>
+        <p>Buy booster packs and upgrades!</p>
+        <button id="buy-pack">Buy Booster Pack (Cost: 200 coins)</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Audio Controls -->
+  <footer>
+    <div id="audio-controls">
+      <button id="toggle-sound">Toggle Sound</button>
+      <input id="volume-control" type="range" min="0" max="100" value="50">
+    </div>
+    <p>&copy; 2025 Ultimate Card Collector</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

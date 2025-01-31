@@ -1,0 +1,93 @@
+/* Basic resets and layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  header {
+    background-color: #1f1f1f;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  nav button {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  #dashboard {
+    background: #222;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+  }
+  
+  .game-view {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Card container styling */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .card {
+    width: 150px;
+    height: 220px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card .card-info {
+    padding: 0.5em;
+  }
+  
+  footer {
+    background: #1f1f1f;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+  }
+  
+  /* Simple card flip animation */
+  @keyframes flip {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+  }
+  
+  .card.flipping {
+    animation: flip 0.5s;
+  }  
